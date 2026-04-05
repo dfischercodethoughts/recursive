@@ -22,7 +22,6 @@ def fibonacci(a):
 
     res = fibonacci(a-1) + fibonacci(a-2)
     state[a] = res
-    print(res)
     return res
 
 def main():
@@ -30,7 +29,7 @@ def main():
     ## what happens??
     ## THIS WILL CRASH YOUR PROCESS unless we add a base case to fibonacci
     ## very slow still
-    print(fibonacci(7, {}))
+    print(fibonacci(7))
     ## how do we improve?
     # option1 : memoization
 
